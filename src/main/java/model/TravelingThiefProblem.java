@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+import NLL.*;
 /**
  * This class represents the main problem to be solved. It stores all variables which are necessary
  * to evaluate the objective function.
@@ -13,9 +14,8 @@ import java.util.List;
  *
  */
 public class TravelingThiefProblem {
-
     //! name of the problem - set if read from a file
-    public String name = "unknown";
+    public String name = "test-example-n4";
 
     //! number of cities
     public int numOfCities = -1;
@@ -32,12 +32,13 @@ public class TravelingThiefProblem {
     // ! maximal weight of the knapsack
     public int maxWeight = -1;
 
-    //! Renting Rate (not needed for multi-objective version)
+
+//! Renting Rate (not needed for multi-objective version)
     public double R = Double.POSITIVE_INFINITY;
 
     // ! coordinate where the salesman could visit cities
     public double[][] coordinates;
-
+    
     //! corresponding city of each item
     public int[] cityOfItem;
 

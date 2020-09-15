@@ -18,7 +18,7 @@ class Runner {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> instanceToRun = Arrays.asList("a280-n279");
+        List<String> instanceToRun = Arrays.asList("test-example-n4");
         //List<String> instanceToRun = Competition.INSTANCES;
 
         for (String instance : instanceToRun) {
@@ -45,7 +45,7 @@ class Runner {
 
             System.out.println(nds.size());
             for(Solution s : nds) {
-                System.out.println(s.time + " " + s.profit);
+                System.out.println(s.time + " /" + s.profit);
             }
 
             Util.printSolutions(nds, true);

@@ -56,6 +56,7 @@ public class RandomLocalSearch implements Algorithm {
             }
 
             // evaluate for this random tour
+            System.out.print(pi);
             Solution s = problem.evaluate(pi,z, true);
             nds.add(s);
             ++counter;
